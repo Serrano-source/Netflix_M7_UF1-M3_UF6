@@ -1,12 +1,11 @@
-Netflix homepage built with Bootstrap.
-1) Correct creation of the page structure divided by 5 "sections" and a "footer".
-2) Appropriate tags to mark the text, images, and lists displayed in the footer menus on the page (links in these menus must be empty). You do not have to play the language selection menu.
-3) Built the two forms in the first and fifth sections (they are the same) using and customizeing the Bootstrap form templates.
-4) Form validation.
-5) Created the contents of the fifth section of the page,by adapting the "Bootsrap accordion".
+Página de inicio de Netflix construida con Bootstrap.
+1) Creación correcta de la estructura de la página dividida en 5 "secciones" y un "pie de página".
+2) Etiquetas apropiadas para marcar el texto, las imágenes y las listas que se muestran en los menús de pie de página de la página (los enlaces en estos menús deben estar vacíos). No tienes que jugar el menú de selección de idioma.
+3) Construyó los dos formularios en la primera y quinta sección (son iguales) usando y personalizando las plantillas de formulario de Bootstrap.
+4) Validación del formulario.
+5) Creé los contenidos de la quinta sección de la página, adaptando el "acordeón Bootsrap".
 
-CSThe elements of the page are arranged following the grid of the page. All sections occupy 100% of the width of the device, although the only contents shown occupying 100% of the width of the device are those located at the top of the first section (“.container- fluid ”); the rest of the contents occupy a smaller width (.container).
-2) The page adapts to the various devices.
-3) The colors and fonts used correspond to a reasonable resemblance to the model.
-4) The use of the “floating labels” effect of placeholders. 
-
+CSLos elementos de la página se organizan siguiendo la cuadrícula de la página. Todas las secciones ocupan el 100% del ancho del dispositivo, aunque los únicos contenidos que se muestran ocupando el 100% del ancho del dispositivo son los ubicados en la parte superior de la primera sección (“.container-fluid”); el resto de contenidos ocupan un ancho menor (.container).
+2) La página se adapta a los distintos dispositivos.
+3) Los colores y fuentes utilizadas corresponden a un parecido razonable con el modelo.
+4) El uso del efecto de "etiquetas flotantes" de marcadores de posición.
