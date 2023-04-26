@@ -20,13 +20,13 @@
         <div class="container-fluid relative">
           <header>
             <img src="img/logo-Netflix.png" alt="Responsive image LOGO" class="img-fluid" />
-            <button type="button" class="btn btn-danger"><a href="inciarsesion.php">Iniciar sesión</a></button>
+            <button type="button" class="btn btn-danger"><a class="iniciar" href="inciarsesion.php">Iniciar sesión</a></button>
           </header>
         </div>
         <div class="jumbotron jumbotron-fluid relative mt-5">
           <h1>Todas las peliculas y series que desees, y mucho más.</h1>
           <p class="lead">Disfruta donde quieras. Cancela cuando quieras</p>
-          <form method="POST" action="/action_page.php"  class="form-signin needs-validation" novalidate >
+          <form method="POST" action="action_page.php"  class="form-signin needs-validation" novalidate >
             <div class="row no-gutters justify-content-center">
               <div class="col-12 first">
                 <p> ¿Quieres ver algo ya? Escribe tu correo para crear una  suscripción a Netflix o reactivarla.</p>
@@ -178,7 +178,7 @@
               </div>
             </div>
           </div>
-          <form method="POST" action="/action_page.php" class="form-signin needs-validation" novalidate>
+          <form method="POST" action="action_page.php" class="form-signin needs-validation" novalidate>
             <div class="row no-gutters justify-content-center">
               <div class="col-12 first">
                 <p>¿Quieres ver algo ya? Escribe tu correo para crear una  suscripción a Netflix o reactivarla.</p>
