@@ -37,5 +37,3 @@ $(function(){
   $('.form-group').floatingLabel({
       floatingStyle:'primary'
     });
-    
-  

@@ -26,7 +26,7 @@
         <div class="jumbotron jumbotron-fluid relative mt-5">
           <h1>Todas las peliculas y series que desees, y mucho más.</h1>
           <p class="lead">Disfruta donde quieras. Cancela cuando quieras</p>
-          <form method="POST" action="action_page.php"  class="form-signin needs-validation" novalidate >
+          <form method="POST" action="registro.php"  class="form-signin needs-validation" novalidate >
             <div class="row no-gutters justify-content-center">
               <div class="col-12 first">
                 <p> ¿Quieres ver algo ya? Escribe tu correo para crear una  suscripción a Netflix o reactivarla.</p>
@@ -39,7 +39,7 @@
                 <label for="inputEmail">Correo electrónico</label>
               </div>
               <div class="col-12 col-lg-3 third my-4">
-                <button class="suscribe" type="submit">Empezar<i class="arrow right"></i>
+                <button class="suscribe" type="submit" >Empezar<i class="arrow right"></i>
                 </button>
               </div>
             </div>
@@ -178,7 +178,7 @@
               </div>
             </div>
           </div>
-          <form method="POST" action="action_page.php" class="form-signin needs-validation" novalidate>
+          <form method="POST" action="registro.php" class="form-signin needs-validation" novalidate>
             <div class="row no-gutters justify-content-center">
               <div class="col-12 first">
                 <p>¿Quieres ver algo ya? Escribe tu correo para crear una  suscripción a Netflix o reactivarla.</p>
