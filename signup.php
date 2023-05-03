@@ -1,30 +1,22 @@
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-    // Conexión a la base de datos
-    $conn = mysqli_connect('localhost', 'root', '', 'netflix');
+  require 'database.php';
 
-    // Insertar datos en la tabla de usuarios
-    $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
-    $result = mysqli_query($conn, $sql);
+  $message = '';
 
-    if($result) {
-        header("Location: inicio.php");
-        exit();
+  if (!empty($_POST['email']) && !empty($_POST['password'])) {
+    $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bindParam(':email', $_POST['email']);
+    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+    $stmt->bindParam(':password', $password);
+
+    if ($stmt->execute()) {
+      $message = 'Successfully created new user';
     } else {
-        echo "Error al registrar el usuario: " . mysqli_error($conn);
+      $message = 'Sorry there must have been an issue creating your account';
     }
-
-    if(isset($_POST['submit'])) {
-        // Procesar el formulario de registro
-    } else {
-        // Mostrar el formulario de registro
-    }
-    mysqli_close($conn);
-}
+  }
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +28,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 <title>Netflix: Registro</title>
 </head>
 <body>
+
+<?php require 'partials/header.php' ?>
+
+    <?php if(!empty($message)): ?>
+      <p> <?= $message ?></p>
+    <?php endif; ?>
+
 
 <header class="showcase">
         
@@ -49,7 +48,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <form action="signup.php" method="post">
                         <h1>Registarse</h1>
                         <div class="info">
-                        <input class="email" type="text" name="username" placeholder="Nombre"><br>
                         <input class="email" type="email" name="email" placeholder="Correo electrónico o número de teléfono"> <br>
                         <input class="email" type="password" name="password" placeholder="Contraseña">
 

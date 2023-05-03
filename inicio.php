@@ -1,50 +1,49 @@
 <?php
-session_start();
+  session_start();
+  require 'database.php';
 
-if(!isset($_SESSION['user_id'])) {
-    header('Location: login.php');
-    exit;
-}
+  if (isset($_SESSION['user_id'])) {
+    $records = $conn->prepare('SELECT id, email, password FROM users WHERE id = :id');
+    $records->bindParam(':id', $_SESSION['user_id']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
 
-$user_id = $_SESSION['user_id'];
+    $user = null;
 
-// Conexión a la base de datos
-$conn = mysqli_connect('localhost', 'root', '', 'netflix');
+    if (count($results) > 0) {
+      $user = $results;
+    }
+  }
 
-// Obtener los datos del usuario
-$sql = "SELECT * FROM users WHERE id = $user_id";
-$result = mysqli_query($conn, $sql);
-
-if(mysqli_num_rows($result) > 0) {
-    $row = mysqli_fetch_assoc($result);
-    echo "Bienvenido " . $row['username'];
-} else {
-    echo "Error al obtener los datos del usuario";
-}
-
-mysqli_close($conn);
+  
 ?>
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Welcome to you WebApp</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-  
-    <?php if(!empty($user)): ?>
-      <br> Welcome. <?= $user['email']; ?>
-      <br>You are Successfully Logged In
-      <a href="logout.php">
-        Logout
-      </a>
-    <?php else: ?>
-      <h1>Please Login or SignUp</h1>
-
-      <a href="logout.php">logo
-    <?php endif; ?>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+</head>
+<body>
+<nav>
+<div class="logo">
+                <img src="https://i.ibb.co/r5krrdz/logo.png">
+            </div>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Series</a></li>
+      <li><a href="#">Películas</a></li>
+      <li><a href="#">Mi lista</a></li>
+      <li><a href="#">Usuario</a>
+        <ul>
+            <li><a href="../usuario.php">Perfil</a></li>
+            <li><a href="#">Configuración</a></li>
+            <li><a href="logout.php">Cerrar sesión</a></li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</body>
 </html>
