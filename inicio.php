@@ -1,6 +1,6 @@
 <?php
   session_start();
-  require 'database.php';
+  require 'config/database.php';
 
   if (isset($_SESSION['user_id'])) {
     $records = $conn->prepare('SELECT id, email, password FROM users WHERE id = :id');
@@ -25,6 +25,7 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6D0itfPri4tjHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
 <nav>
@@ -33,8 +34,8 @@
             </div>
     <ul>
       <li><a href="#">Inicio</a></li>
-      <li><a href="#">Series</a></li>
-      <li><a href="#">Películas</a></li>
+      <li><a href="principal/series.php">Series</a></li>
+      <li><a href="principal/peliculas.php">Películas</a></li>
       <li><a href="#">Mi lista</a></li>
       <li><a href="#">Usuario</a>
         <ul>
