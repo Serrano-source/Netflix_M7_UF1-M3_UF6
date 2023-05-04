@@ -14,7 +14,7 @@
 <body>
     <nav>
         <div class="logo">
-            <img src="https://i.ibb.co/r5krrdz/logo.png">
+            <img href="../inicio.php" src="https://i.ibb.co/r5krrdz/logo.png">
         </div>
 
         <?php

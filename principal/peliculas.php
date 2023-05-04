@@ -14,14 +14,15 @@
 <body>
     <nav>
         <div class="logo">
-            <img src="https://i.ibb.co/r5krrdz/logo.png">
+            <a href="../inicio.php"><img  src="https://i.ibb.co/r5krrdz/logo.png"></a>
         </div>
 
         <ul>
             <li><a href="../inicio.php">Inicio</a></li>
             <li><a href="series.php">Series</a></li>
-            <li><a href="principal/peliculas.php">Películas</a></li>
+            <li><a href="peliculas.php">Películas</a></li>
             <li><a href="#">Mi lista</a></li>
+            <li><a href="usuarios.php">Usuarios</a></li>
             <li><a href="#">Usuario</a>
                 <ul>
                     <li><a href="../usuario.php">Perfil</a></li>
@@ -54,6 +55,22 @@
                 </thead>
                 <tbody>
 
+                <?php
+    include "../config/Conexion.php";
+    $num_rec_per_page = 5;
+
+    // Obtiene la página actual y el registro inicial
+    if (isset($_GET["page"])) { 
+        $page = $_GET["page"]; 
+    } else { 
+        $page=1; 
+    }; 
+    $start_from = ($page-1) * $num_rec_per_page; 
+
+    // Consulta SQL para obtener los registros de la página actual
+    $Sql = "SELECT * FROM peliculas LIMIT $start_from, $num_rec_per_page";
+    $resultado = $conexion->query($Sql);?>
+
                     <?php
                         include "../config/Conexion.php";
                         $Sql = "SELECT * FROM peliculas";
@@ -73,43 +90,33 @@
                     </tr>
                 </tbody>
                 <?php } ?>
+
+                    <!-- Código del paginador -->
+    <div class="paginator">
+        <?php
+            // Obtiene el número total de registros
+            $Sql = "SELECT COUNT(*) as total FROM peliculas";
+            $resultado = $conexion->query($Sql);
+            $row = $resultado->fetch_assoc();
+            $total_records = $row['total'];
+
+            // Calcula el número total de páginas
+            $total_pages = ceil($total_records / $num_rec_per_page); 
+
+            // Genera los enlaces del paginador
+            echo "<a href='peliculas.php?page=1'>".'|<'."</a> "; // Goto 1st page  
+            for ($i=1; $i<=$total_pages; $i++) { 
+                echo "<a href='peliculas.php?page=".$i."'>".$i."</a> "; 
+            }; 
+            echo "<a href='peliculas.php?page=$total_pages'>".'>|'."</a> "; // Goto last page
+        ?>
+
             </table>
 
 
 
 
         </div>
-        <?php
-    include "../config/Conexion.php";
-    $num_rec_per_page = 10;
-    if (isset($_GET["page"])) { 
-        $page = $_GET["page"]; 
-    } else { 
-        $page=1; 
-    }; 
-    $start_from = ($page-1) * $num_rec_per_page; 
-    $Sql = "SELECT * FROM peliculas LIMIT $start_from, $num_rec_per_page";
-    $resultado = $conexion->query($Sql);
-
-    while($Fila = $resultado->fetch_assoc()){
-?>
-    <!-- Aquí va el código de la tabla -->
-<?php } ?>
-
-<!-- Código del paginator -->
-<div class="paginator">
-    <?php
-        $Sql = "SELECT COUNT(*) as total FROM peliculas";
-        $resultado = $conexion->query($Sql);
-        $row = $resultado->fetch_assoc();
-        $total_records = $row['total'];
-        $total_pages = ceil($total_records / $num_rec_per_page); 
-        echo "<a href='peliculas.php?page=1'>".'|<'."</a> "; // Goto 1st page  
-        for ($i=1; $i<=$total_pages; $i++) { 
-            echo "<a href='peliculas.php?page=".$i."'>".$i."</a> "; 
-        }; 
-        echo "<a href='peliculas.php?page=$total_pages'>".'>|'."</a> "; // Goto last page
-    ?>
 </div>
 
 </div>

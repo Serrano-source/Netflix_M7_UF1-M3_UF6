@@ -37,6 +37,7 @@
       <li><a href="principal/series.php">Series</a></li>
       <li><a href="principal/peliculas.php">Películas</a></li>
       <li><a href="#">Mi lista</a></li>
+      <li><a href="principal/usuarios.php">Usuarios</a></li>
       <li><a href="#">Usuario</a>
         <ul>
             <li><a href="../usuario.php">Perfil</a></li>
