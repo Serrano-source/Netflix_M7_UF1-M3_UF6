@@ -6,6 +6,7 @@ Tambien podremos editar los usuarios que estan registrados previamente.
 Podremos iniciar sesion como usuario normal y podremos ver las series y peliculas añadidas.
 Como administrador podremos editar las series, las peliculas y usuarios. 
 
+![UML](UML_Netflix.png)
 
 
 Codigo creacion de taules
