@@ -1,4 +1,4 @@
-Descripcion del proyecto:
+#Descripcion del proyecto:
 
 El proyecto tracta de hacer un netflix pero en vez de ser el tipico netflix que todos conocemos sera un netflix tipo administrador.
 Nosotros podremos añadir las series, las peliculas y pondremos de que trata, la duracion ETC..
@@ -8,7 +8,7 @@ Como administrador podremos editar las series, las peliculas y usuarios.
 
 
 
-Codigo creacion de taules
+#Codigo creacion de taules
 
 CREATE TABLE users (
    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
