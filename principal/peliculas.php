@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Series</title>
+    <title>peliculas</title>
     <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -26,61 +26,63 @@
             <a href="usuarios.php" class="nav-item">Usuarios</a>
         </div>
         <div class="righticons d-flex flex-end flex-middle">
-            <a href="search.html"><img src="../img/icons/search.svg" alt="search icon"></a>
-            <div class="dropdown notification">
-                <img src="../img/icons/notification.svg" alt="notificatio icon">
-                <div class="dropdown-content">
-                    <a href="#" class="profile-item d-flex flex-middle">
-                        <img src="../img/icons/user2.png" alt="user profile icon" class="user-icon">
-                        <span>You have new notification from <span>User 123</span></span>
-                    </a>
-                    <a href="#" class="profile-item d-flex flex-middle">
-                        <img src="../img/icons/user1.png" alt="user profile icon" class="user-icon">
-                        <span>You have new notification from <span>User 123</span></span>
-                    </a>
-                    <a href="#" class="profile-item d-flex flex-middle">
-                        <img src="../img/icons/user4.png" alt="user profile icon" class="user-icon">
-                        <span>You have new notification from <span>User 123</span></span>
-                    </a>
-                    <a href="#" class="profile-item d-flex flex-middle">
-                        <img src="../img/icons/user3.png" alt="user profile icon" class="user-icon">
-                        <span>You have new notification from <span>User 123</span></span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <img src="../img/icons/user-image-green.png" alt="user profile icon" class="user-icon"> <span class="profile-arrow"></span>
-
-                <div class="dropdown-content">
-                    <div class="profile-links">
-                        <a href="#" class="profile-item d-flex flex-middle">
-                            <img src="../img/icons/user1.png" alt="user profile icon" class="user-icon">
-                            <span>Rajesh</span>
-                        </a>
-                        <a href="#" class="profile-item d-flex flex-middle">
-                            <img src="../img/icons/user2.png" alt="user profile icon" class="user-icon">
-                            <span>Karan</span>
-                        </a>
-                        <a href="#" class="profile-item d-flex flex-middle">
-                            <img src="../img/icons/user3.png" alt="user profile icon" class="user-icon">
-                            <span>Pappy</span>
-                        </a>
-                        <a href="#" class="profile-item d-flex flex-middle" style="margin-bottom: 13px;">
-                            <img src="../img/icons/user4.png" alt="user profile icon" class="user-icon">
-                            <span>Denny</span>
-                        </a>
-                        <a href="#" class="profile-item last" >Manage Profiles</a>
+                    <a href="search.html"><img src="../img/icons/search.svg" alt="search icon"></a>
+                    <div class="dropdown notification">
+                        <img src="../img/icons/notification.svg" alt="notificatio icon">
+                        <div class="dropdown-content">
+                            <a href="#" class="profile-item d-flex flex-middle">
+                                <img src="../img/icons/user2.png" alt="user profile icon" class="user-icon">
+                                <span>Tienes una nueva notificación de <span>David</span></span>
+                            </a>
+                            <a href="#" class="profile-item d-flex flex-middle">
+                                <img src="../img/icons/user1.png" alt="user profile icon" class="user-icon">
+                                <span>Tienes una nueva notificación de <span>Isabella</span></span>
+                            </a>
+                            <a href="#" class="profile-item d-flex flex-middle">
+                                <img src="../img/icons/user4.png" alt="user profile icon" class="user-icon">
+                                <span>Tienes una nueva notificación de <span>Ramon</span></span>
+                            </a>
+                            <a href="#" class="profile-item d-flex flex-middle">
+                                <img src="../img/icons/user3.png" alt="user profile icon" class="user-icon">
+                                <span>Tienes una nueva notificación de <span>Julia</span></span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="line"></div>
-                    <div class="links d-flex direction-column">
-                        <a href="user-profile/home.html">Account</a>
-                        <a href="#">Help Center</a>
-                        <a href="/">Sign Out of Netflix</a>
+        
+                    <div class="dropdown">
+                        <img src="../img/icons/user-image-green.png" alt="user profile icon" class="user-icon"> <span class="profile-arrow"></span>
+        
+                        <div class="dropdown-content">
+                            <div class="profile-links">
+                                <a href="#" class="profile-item d-flex flex-middle">
+                                    <img src="../img/icons/user1.png" alt="user profile icon" class="user-icon">
+                                    <span>David</span>
+                                </a>
+                                <a href="#" class="profile-item d-flex flex-middle">
+                                    <img src="../img/icons/user2.png" alt="user profile icon" class="user-icon">
+                                    <span>Isabella</span>
+                                </a>
+                                <a href="#" class="profile-item d-flex flex-middle">
+                                    <img src="../img/icons/user3.png" alt="user profile icon" class="user-icon">
+                                    <span>Ramon</span>
+                                </a>
+                                <a href="#" class="profile-item d-flex flex-middle" style="margin-bottom: 13px;">
+                                    <img src="../img/icons/user4.png" alt="user profile icon" class="user-icon">
+                                    <span>Julia</span>
+                                </a>
+                                <a href="#" class="profile-item last" >Manage Profiles</a>
+                            </div>
+                            <div class="line"></div>
+                            <div class="links d-flex direction-column">
+                                <a href="../users/usuario.php">Cuenta</a>
+                                <a href="#">Centro de ayuda</a>
+                                <a href="../logout.php">Salir de Netflix</a>
+                            </div>
+                            
+                        </div>
                     </div>
                     
                 </div>
-            </div>
             
         </div>
     </header>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Netflix: vea programas de televisión en línea, vea películas en línea</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"
+        integrity="sha256-t2kyTgkh+fZJYRET5l9Sjrrl4UDain5jxdbqe8ejO8A=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/browse.css">
+    <link rel="stylesheet" href="../assets/css/single.css">
+
+    <!--reproductor de video html5-->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+
+</head>
+
+<body>
+
+    <main id="mainContainer" class="p-b-40">
+
+        <header class="d-flex space-between flex-center flex-middle">
+            <div class="nav-links d-flex flex-center flex-middle">
+                <a href="../">
+                    <h2 class="logo logo-text red-color f-s-28 m-r-25">NETFLIX</h2>
+                    <h2 class="second-logo-text red-color f-s-28">N</h2>
+                </a>
+                <a href="../inicio.php" class="nav-item home">Inicio</a>
+                <a href="series.php" class="nav-item">Series</a>
+                <a href="peliculas.php" class="nav-item">Películas</a>
+                <a href="mylist.html" class="nav-item latest">Mi lista</a>
+                <a href="usuarios.php" class="nav-item">Usuarios</a>
+            </div>
+            <div class="righticons d-flex flex-end flex-middle">
+                <a href="search.html"><img src="../img/icons/search.svg" alt="search icon"></a>
+                <div class="dropdown notification">
+                    <img src="../img/icons/notification.svg" alt="notificatio icon">
+                    <div class="dropdown-content">
+                        <a href="#" class="profile-item d-flex flex-middle">
+                            <img src="../img/icons/user2.png" alt="user profile icon" class="user-icon">
+                            <span>Tienes una nueva notificación de <span>David</span></span>
+                        </a>
+                        <a href="#" class="profile-item d-flex flex-middle">
+                            <img src="../img/icons/user1.png" alt="user profile icon" class="user-icon">
+                            <span>Tienes una nueva notificación de <span>Isabella</span></span>
+                        </a>
+                        <a href="#" class="profile-item d-flex flex-middle">
+                            <img src="../img/icons/user4.png" alt="user profile icon" class="user-icon">
+                            <span>Tienes una nueva notificación de <span>Ramon</span></span>
+                        </a>
+                        <a href="#" class="profile-item d-flex flex-middle">
+                            <img src="../img/icons/user3.png" alt="user profile icon" class="user-icon">
+                            <span>Tienes una nueva notificación de <span>Julia</span></span>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="dropdown">
+                    <img src="../img/icons/user-image-green.png" alt="user profile icon" class="user-icon"> <span class="profile-arrow"></span>
+    
+                    <div class="dropdown-content">
+                        <div class="profile-links">
+                            <a href="#" class="profile-item d-flex flex-middle">
+                                <img src="../img/icons/user1.png" alt="user profile icon" class="user-icon">
+                                <span>David</span>
+                            </a>
+                            <a href="#" class="profile-item d-flex flex-middle">
+                                <img src="../img/icons/user2.png" alt="user profile icon" class="user-icon">
+                                <span>Isabella</span>
+                            </a>
+                            <a href="#" class="profile-item d-flex flex-middle">
+                                <img src="../img/icons/user3.png" alt="user profile icon" class="user-icon">
+                                <span>Ramon</span>
+                            </a>
+                            <a href="#" class="profile-item d-flex flex-middle" style="margin-bottom: 13px;">
+                                <img src="../img/icons/user4.png" alt="user profile icon" class="user-icon">
+                                <span>Julia</span>
+                            </a>
+                            <a href="#" class="profile-item last" >Manage Profiles</a>
+                        </div>
+                        <div class="line"></div>
+                        <div class="links d-flex direction-column">
+                            <a href="../users/usuario.php">Cuenta</a>
+                            <a href="#">Centro de ayuda</a>
+                            <a href="../logout.php">Salir de Netflix</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+
+        <!--hero section video -->
+        <div class="videocontainer">
+            <video controls crossorigin playsinline
+                poster="../img/movies/murder mystery.jpg" id="player">
+                <!--Archivos de video  -->
+                <source src="../img/movies/videos/Murder Mystery - Trailer - Netflix.mp4" type="video/mp4"
+                    >
+
+                <!-- Archivos de subtítulos -->
+                <track kind="captions" label="English" srclang="en"
+                    src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default>
+            </video>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Este es el JavaScript mínimo indispensable. Puede optar por no pasar ningún argumento a la configuración.
+                const player = new Plyr('#player');
+
+                // Exponer
+                window.player = player;
+
+                // Oyente de eventos de enlace
+                function on(selector, type, callback) {
+                    document.querySelector(selector).addEventListener(type, callback, false);
+                }
+            });
+        </script>
+
+
+        <section class="movieinformation container">
+            <div class="movielogo">
+                <img src="../img/movies/murder mystery logo.webp" alt="">
+            </div>
+            <div class="movierelease">
+                <span class="year">
+                    2019
+                </span>
+                <span class="rating">
+                    PG-13
+                </span>
+                <span class="timeduration">
+                    3h 7m
+                </span>
+            </div>
+            <div class="description">
+                Un policía de Nueva York y su esposa se van de vacaciones a Europa para revitalizar la chispa de su matrimonio. A
+                un encuentro casual los lleva a ser incriminados por el asesinato de un anciano multimillonario.
+            </div>
+            <div class="castinformation">
+                <p><span class="name">Director:</span> Kyle Newacheck</p>
+                <p><span class="name">Guión:</span> James Vanderbilt</p>
+                <p><span class="name">Productores:</span> Adam Sandler, James Vanderbilt, Allen Covert, James D. Stern,
+                    Tripp Vinson, A.J. Dix</p>
+                <p><span class="name">Premios:</span> Premio People's Choice a la película de comedia favorita</p>
+            </div>
+            <div class="actions d-flex flex-start flex-middle">
+                <a href="#" class="link-item">
+                    <i class="fa fa-plus"></i></br>
+                    Mi lista
+                </a>
+                <a href="#" class="link-item">
+                    <i class="fa fa-thumbs-up"></i></br>
+                    Like
+                </a>
+                <a href="#" class="link-item">
+                    <i class="fa fa-share"></i></br>
+                    Compartir
+                </a>
+                <a href="#" class="link-item">
+                    <i class="fa fa-download"></i></br>
+                    Descargar
+                </a>
+            </div>
+        </section>
+
+
+
+
+        <!--Películas de acción de Hollywood-->
+        <section id="similar" class="container p-t-40">
+            <h4 class="romantic-heading">
+                Más como esto
+            </h4>
+            <div class="romantic-container d-flex flex-start flex-middle">
+                <a href="#">
+                    <img src="../cartatulasseries/locoporella.jpg" alt=""
+                        class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                <a href="#">
+                    <img src="../cartatulasseries/atravésdelmar.jpg" alt=""
+                        class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                <a href="#">
+                    <img src="../cartatulasseries/cuando nos volvamos a encontrar.jpg" alt=""
+                        class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                <a href="#">
+                    <img src="../cartatulasseries/erestu.jpg poster.jpg" alt=""
+                        class="mylist-img p-r-10 p-t-10 image-size item"></a>
+
+
+
+            </div>
+        </section>
+
+        </div>
+
+
+        <!--sección de pie de página y menú fijo de pie de página móvil-->
+
+        <footer class="mainfooter d-flex direction-column space-between" id=" footer">
+            <div class="container footer-container flex-start">
+                <div class="widgets d-flex space-between">
+                    <div class="first-widget">
+                        <ul>
+                            <li class="list-item">Audio y Subtítulos</li>
+                            <li class="list-item">Centro de Medios</li>
+                            <li class="list-item">Privacidad</li>
+                            <li class="list-item">Contacta con nosotros</li>
+                        </ul>
+                    </div>
+                    <div class="second-widget">
+                        <ul>
+                            <li class="list-item">Centro de ayuda</li>
+                            <li class="list-item">Cookie</li>
+                            <li class="list-item">Trabajos</li>
+                        </ul>
+                    </div>
+                    <div class="third-widget">
+                        <ul>
+                            <li class="list-item">Audiodescripción</li>
+                            <li class="list-item">Relaciones con inversionistas</li>
+                            <li class="list-item">Aviso Legal</li>
+                        </ul>
+                    </div>
+                    <div class="forth-widget">
+                        <ul>
+                            <li class="list-item">Tarjeta de regalo</li>
+                            <li class="list-item">Terminos de uso</li>
+                            <li class="list-item">Información corporativa</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="button service">Código de servicio</button>
+                <p class="copyright">@Copyright 2023 David Serrano, Inc.</p>
+            </div>
+
+
+        </footer>
+        </div>
+
+
+    </main>
+
+    <div class="footer-navigation d-flex space-between">
+        <a href="browse.html" class="nav-item active">
+            <i class="fa fa-home" aria-hidden="true"></i> </br>
+            <span>Casa</span>
+        </a>
+        <a href="search.html" class="nav-item">
+            <i class="fa fa-search" aria-hidden="true"></i></br>
+            Buscar
+        </a>
+        <a href="latest.html" class="nav-item">
+            <i class="fa fa-film" aria-hidden="true"></i></br>
+            Ultimo
+        </a>
+        <a href="user-profile/home.html" class="nav-item">
+            <i class="fa fa-user" aria-hidden="true"></i></br>
+            Cuenta
+        </a>
+    </div>
+
+
+
+</body>
+
+</html>

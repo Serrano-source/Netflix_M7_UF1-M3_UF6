@@ -28,25 +28,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Netflix world- Frontend Clone – Watch TV Shows Online, Watch Movies Online</title>
+	<title>Netflix: vea programas de televisión en línea, vea películas en línea</title>
 <meta name="description" content="Video streaming website Netflix clone. Frontend - HTML5, Pure CSS3 [flexbox], JS, OWL Carousel, JQuery |" />
     <meta name="robots" content="index, follow" />
-	
-	<!-- og properties -->
-	
-	<meta property="og:site_name" content="Rajesh Royal" />
-	<meta property="article:publisher" content="https://www.facebook.com/Rajesh.royal.896/" />
-
-	<meta property="og:image" content="img/site-image-description.PNG" />
-
-	<!-- -->
     
     <link rel="stylesheet" href="assets/lib/owl.carousel.css" />
     <script src="assets/lib/jquery 3.5.0.js"></script>
     <script src="assets/lib/owl.carousel.js"></script>
     <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
 
-    <!--main script file-->
+    <!--archivo de script principal-->
     <script src="assets/js/main-script.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" integrity="sha256-t2kyTgkh+fZJYRET5l9Sjrrl4UDain5jxdbqe8ejO8A=" crossorigin="anonymous" />
@@ -74,58 +65,58 @@
                     <a href="principal/mylist.html" class="nav-item latest">Mi lista</a>
                     <a href="principal/usuarios.php" class="nav-item">Usuarios</a>
                 </div>
-                <div class="righticons d-flex flex-end flex-middle">
+                    <div class="righticons d-flex flex-end flex-middle">
                     <a href="search.html"><img src="img/icons/search.svg" alt="search icon"></a>
                     <div class="dropdown notification">
                         <img src="img/icons/notification.svg" alt="notificatio icon">
                         <div class="dropdown-content">
                             <a href="#" class="profile-item d-flex flex-middle">
                                 <img src="img/icons/user2.png" alt="user profile icon" class="user-icon">
-                                <span>You have new notification from <span>User 123</span></span>
+                                <span>Tienes una nueva notificación de <span>David</span></span>
                             </a>
                             <a href="#" class="profile-item d-flex flex-middle">
                                 <img src="img/icons/user1.png" alt="user profile icon" class="user-icon">
-                                <span>You have new notification from <span>User 123</span></span>
+                                <span>Tienes una nueva notificación de <span>Isabella</span></span>
                             </a>
                             <a href="#" class="profile-item d-flex flex-middle">
                                 <img src="img/icons/user4.png" alt="user profile icon" class="user-icon">
-                                <span>You have new notification from <span>User 123</span></span>
+                                <span>Tienes una nueva notificación de <span>Ramon</span></span>
                             </a>
                             <a href="#" class="profile-item d-flex flex-middle">
                                 <img src="img/icons/user3.png" alt="user profile icon" class="user-icon">
-                                <span>You have new notification from <span>User 123</span></span>
+                                <span>Tienes una nueva notificación de <span>Julia</span></span>
                             </a>
                         </div>
                     </div>
-
+        
                     <div class="dropdown">
                         <img src="img/icons/user-image-green.png" alt="user profile icon" class="user-icon"> <span class="profile-arrow"></span>
-
+        
                         <div class="dropdown-content">
                             <div class="profile-links">
                                 <a href="#" class="profile-item d-flex flex-middle">
                                     <img src="img/icons/user1.png" alt="user profile icon" class="user-icon">
-                                    <span>Rajesh</span>
+                                    <span>David</span>
                                 </a>
                                 <a href="#" class="profile-item d-flex flex-middle">
                                     <img src="img/icons/user2.png" alt="user profile icon" class="user-icon">
-                                    <span>Karan</span>
+                                    <span>Isabella</span>
                                 </a>
                                 <a href="#" class="profile-item d-flex flex-middle">
                                     <img src="img/icons/user3.png" alt="user profile icon" class="user-icon">
-                                    <span>Pappy</span>
+                                    <span>Ramon</span>
                                 </a>
                                 <a href="#" class="profile-item d-flex flex-middle" style="margin-bottom: 13px;">
                                     <img src="img/icons/user4.png" alt="user profile icon" class="user-icon">
-                                    <span>Denny</span>
+                                    <span>Julia</span>
                                 </a>
                                 <a href="#" class="profile-item last" >Manage Profiles</a>
                             </div>
                             <div class="line"></div>
                             <div class="links d-flex direction-column">
-                                <a href="user-profile/home.html">Account</a>
-                                <a href="#">Help Center</a>
-                                <a href="/">Sign Out of Netflix</a>
+                                <a href="users/usuario.php">Cuenta</a>
+                                <a href="#">Centro de ayuda</a>
+                                <a href="logout.php">Salir de Netflix</a>
                             </div>
                             
                         </div>
@@ -144,7 +135,7 @@
                             poster="img/tv-show/poster/never-have-ever-tv-show.webp">
                             <source src="img/tv-show/videos/Never Have I Ever - Official Trailer - Netflix_2.mp4"
                                 type="video/mp4">
-                            Your browser does not support the video tag.
+                                Su navegador no soporta la etiqueta de vídeo.
                         </video>
 
                         <!--left shadow-->
@@ -177,14 +168,14 @@
                                     points="8.4639503 12.8342327 6.65837455 13.2666206 6.65837455 7.77862061 4.65323515 7.77862061 4.65323515 6.22012364 10.4690897 6.22012364 10.4690897 7.77862061 8.4639503 7.77862061">
                                 </polygon>
                             </svg>
-                            <span class="p-l-10">#2 in India Today</span>
+                            <span class="p-l-10">#2 en España hoy</span>
                         </div>
 
                         <div class="synopsis m-t-20" style="max-width: 500px;">
                             <p>
-                                Getting the grades? Too easy. Getting through grief? Too hard. This year, there’s just
-                                one goal
-                                on her mind: getting the guy.
+                            Obtener las calificaciones? Demasiado fácil. ¿Superando el duelo? Demasiado duro. Este año, solo hay
+                                una meta
+                                en su mente: atrapar al chico.
                             </p>
                         </div>
                         <div class="buttons-container m-t-20">
@@ -192,7 +183,7 @@
                                     <svg viewBox="0 0 24 24">
                                         <path d="M6 4l15 8-15 8z" fill="currentColor"></path>
                                     </svg>
-                                </span> <a href="single.html">Play</a></button>
+                                </span> <a href="principal/single.html">Iniciar</a></button>
 
                             <button class="more-info-button m-t-20"><span>
                                     <svg viewBox="0 0 24 24">
@@ -200,21 +191,21 @@
                                             d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10zm-2 0a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8zm-9 6v-7h2v7h-2zm1-8.75a1.21 1.21 0 0 1-.877-.364A1.188 1.188 0 0 1 10.75 8c0-.348.123-.644.372-.886.247-.242.54-.364.878-.364.337 0 .63.122.877.364.248.242.373.538.373.886s-.124.644-.373.886A1.21 1.21 0 0 1 12 9.25z"
                                             fill="currentColor"></path>
                                     </svg>
-                                </span> More Info</button>
+                                </span> Más información</button>
                         </div>
                     </div>
                 </section>
             </div>
 
-            <!--paretn div with black bg after main hero section-->
+         
             <div class="black-background">
 
 
-                <!--my list -->
+             
                 <section id="mylist" class="container">
 
                     <h4 class="mylist-heading">
-                        My List
+                    Mi lista 
                     </h4>
                     <div class="mylist-container d-flex flex-start flex-middle flex-no-wrap owl-carousel">
                         <div class="video">
@@ -255,7 +246,7 @@
                                 <source
                                     src="img/movies/videos/We're the Millers - Official Trailer [HD].mp4"
                                     type="video/mp4">
-                                Your browser does not support the video tag.
+                                    Su navegador no soporta la etiqueta de vídeo..
                             </video>
 
                             <div class="video-description d-flex flex-end direction-column">
@@ -271,12 +262,12 @@
                                 </div>
                                 <div class="info d-flex flex-middle flex-no-wrap">
                                     <p class="rated text-shadow"><strong>18+</strong></p>
-                                    <p class="season-count text-shadow">Movie</p>
+                                    <p class="season-count text-shadow">Película</p>
                                 </div>
                                 <div class="genere d-flex flex-no-wrap text-shadow">
-                                    <p>#Nudeity</p>
-                                    <p>#fiction</p>
-                                    <p>#Comedy</p>
+                                    <p>#Desnudez</p>
+                                    <p>#ficción</p>
+                                    <p>#Comedia</p>
                                 </div>
                             </div>
                         </div>
@@ -287,7 +278,7 @@
                                 <source
                                     src="img/movies/videos/Murder Mystery - Trailer - Netflix.mp4"
                                     type="video/mp4">
-                                Your browser does not support the video tag.
+                                    Su navegador no soporta la etiqueta de vídeo.
                             </video>
 
                             <div class="video-description d-flex flex-end direction-column">
@@ -303,12 +294,12 @@
                                 </div>
                                 <div class="info d-flex flex-middle flex-no-wrap">
                                     <p class="rated text-shadow"><strong>18+</strong></p>
-                                    <p class="season-count text-shadow">Movie</p>
+                                    <p class="season-count text-shadow">Película</p>
                                 </div>
                                 <div class="genere d-flex flex-no-wrap text-shadow">
-                                    <p>#Adrenalin</p>
-                                    <p>#Wild</p>
-                                    <p>#Action</p>
+                                    <p>#Adrenalina</p>
+                                    <p>#Salvaje</p>
+                                    <p>#Acción</p>
                                 </div>
                             </div>
                         </div>
@@ -317,12 +308,9 @@
 
                 </section>
 
-
-
-                <!--continure watching-->
                 <section id="continue-watching" class="container p-t-40">
                     <h4 class="continue-watching-heading">
-                        Continue watching for Rajesh Royal
+                    Seguir viendo Rajesh Royal  
                     </h4>
                     <div class="continue-watching-container d-flex flex-start flex-middle flex-no-wrap owl-carousel">
 
@@ -332,7 +320,7 @@
                                         <source
                                             src="img/tv-show/videos/Never Have I Ever - Official Trailer - Netflix_2.mp4"
                                             type="video/mp4">
-                                        Your browser does not support the video tag.
+                                            Su navegador no soporta la etiqueta de vídeo.
                                     </video>
         
                                     <div class="video-description d-flex flex-end direction-column">
@@ -348,12 +336,12 @@
                                         </div>
                                         <div class="info d-flex flex-middle flex-no-wrap">
                                             <p class="rated text-shadow"><strong>18+</strong></p>
-                                            <p class="season-count text-shadow">Movie</p>
+                                            <p class="season-count text-shadow">Película</p>
                                         </div>
                                         <div class="genere d-flex flex-no-wrap text-shadow">
-                                            <p>#Nudeity</p>
-                                            <p>#sex</p>
-                                            <p>#Comedy</p>
+                                            <p>#Desnudez</p>
+                                            <p>#Sexo</p>
+                                            <p>#Comedia</p>
                                         </div>
                                     </div>
                                 </div>
@@ -365,7 +353,7 @@
                                         <source
                                             src="img/tv-show/videos/Never Have I Ever - Official Trailer - Netflix_2.mp4"
                                             type="video/mp4">
-                                        Your browser does not support the video tag.
+                                            Su navegador no soporta la etiqueta de vídeo.
                                     </video>
         
                                     <div class="video-description d-flex flex-end direction-column">
@@ -381,12 +369,12 @@
                                         </div>
                                         <div class="info d-flex flex-middle flex-no-wrap">
                                             <p class="rated text-shadow"><strong>18+</strong></p>
-                                            <p class="season-count text-shadow">Movie</p>
+                                            <p class="season-count text-shadow">Pelicula</p>
                                         </div>
                                         <div class="genere d-flex flex-no-wrap text-shadow">
-                                            <p>#Nudeity</p>
-                                            <p>#crime</p>
-                                            <p>#Love</p>
+                                            <p>#Desnudez</p>
+                                            <p>#delito</p>
+                                            <p>#Amar</p>
                                         </div>
                                     </div>
                                 </div>
@@ -397,7 +385,7 @@
                                         <source
                                             src="img/tv-show/videos/Never Have I Ever - Official Trailer - Netflix_2.mp4"
                                             type="video/mp4">
-                                        Your browser does not support the video tag.
+                                            
                                     </video>
         
                                     <div class="video-description d-flex flex-end direction-column">
@@ -413,12 +401,12 @@
                                         </div>
                                         <div class="info d-flex flex-middle flex-no-wrap">
                                             <p class="rated text-shadow"><strong>18+</strong></p>
-                                            <p class="season-count text-shadow"> 1 Season</p>
+                                            <p class="season-count text-shadow">Temporada 1</p>
                                         </div>
                                         <div class="genere d-flex flex-no-wrap text-shadow">
-                                            <p>#Nudeity</p>
+                                            <p>#Desnudez</p>
                                             <p>#Romance</p>
-                                            <p>#Love</p>
+                                            <p>#Amar</p>
                                         </div>
                                     </div>
                                 </div>
@@ -429,7 +417,7 @@
                                         <source
                                             src="img/movies/videos/We're the Millers - Official Trailer [HD].mp4"
                                             type="video/mp4">
-                                        Your browser does not support the video tag.
+                                            Su navegador no soporta la etiqueta de vídeo.
                                     </video>
         
                                     <div class="video-description d-flex flex-end direction-column">
@@ -440,60 +428,27 @@
                                         </div>
                                         <div>
                                             <h4 class="heading f-w-8 text-shadow">
-                                                WE'RE THE MILERS
+                                               The Avengers
                                             </h4>
                                         </div>
                                         <div class="info d-flex flex-middle flex-no-wrap">
-                                            <p class="rated text-shadow"><strong>18+</strong></p>
-                                            <p class="season-count text-shadow">Movie</p>
+                                            <p class="rated text-shadow"><strong>7+</strong></p>
+                                            <p class="season-count text-shadow">Película</p>
                                         </div>
                                         <div class="genere d-flex flex-no-wrap text-shadow">
-                                            <p>#Nudeity</p>
-                                            <p>#fiction</p>
-                                            <p>#Comedy</p>
+                                            <p>#Superhéroe</p>
+                                            <p>#Acción</p>
+                                            <p>#Ciencia ficción</p>
                                         </div>
                                     </div>
                                 </div>
-        
-                                <div class="video">
-                                    <video class="mylist-img p-r-10 p-t-10 video-item"
-                                        poster="img/movies/extraction-poster.jpg">
-                                        <source
-                                            src="img/movies/videos/Murder Mystery - Trailer - Netflix.mp4"
-                                            type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-        
-                                    <div class="video-description d-flex flex-end direction-column">
-                                        <div class="play-button">
-                                            <svg viewBox="0 0 24 24">
-                                                <path d="M6 4l15 8-15 8z" fill="black"></path>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading f-w-8 text-shadow">
-                                                Extraction
-                                            </h4>
-                                        </div>
-                                        <div class="info d-flex flex-middle flex-no-wrap">
-                                            <p class="rated text-shadow"><strong>18+</strong></p>
-                                            <p class="season-count text-shadow">Movie</p>
-                                        </div>
-                                        <div class="genere d-flex flex-no-wrap text-shadow">
-                                            <p>#Adrenalin</p>
-                                            <p>#Wild</p>
-                                            <p>#Action</p>
-                                        </div>
-                                    </div>
-                                </div>
-
                     </div>
                 </section>
 
-                <!--Romantic Movies-->
+             
                 <section id="romantic" class="container p-t-40">
                     <h4 class="romantic-heading">
-                        Romantic Movies
+                    Películas románticas
                     </h4>
                     <div class="romantic-container d-flex flex-start flex-middle flex-no-wrap owl-carousel">
                         <a href="#">
@@ -519,7 +474,7 @@
                     </div>
                 </section>
 
-                <!--big poster screen left poster right content-->
+               
                 <section class="big-section d-flex flex-start container">
                     <img src="img/tv-show/poster/sex-education.webp" alt="">
 
@@ -529,7 +484,7 @@
                                 class="show-logo" />
                         </div>
 
-                        <!--top 10 ranking badge svg-->
+                     
                         <div class="ranking d-flex m-t-20 flex-middle">
                             <svg id="top-10-badge" viewBox="0 0 28 30" style="height: 50px;">
                                 <path d="M0,0 L28,0 L28,30 L0,30 L0,0 Z M2,2 L2,28 L26,28 L26,2 L2,2 Z" fill="#FFFFFF">
@@ -550,14 +505,14 @@
                                     points="8.4639503 12.8342327 6.65837455 13.2666206 6.65837455 7.77862061 4.65323515 7.77862061 4.65323515 6.22012364 10.4690897 6.22012364 10.4690897 7.77862061 8.4639503 7.77862061">
                                 </polygon>
                             </svg>
-                            <span class="p-l-10 f-s-24 f-w-8">#6 in India Today</span>
+                            <span class="p-l-10 f-s-24 f-w-8">#6 en España hoy</span>
                         </div>
 
                         <div class="synopsis m-t-20" style="max-width: 500px;">
                             <p class="f-s-20">
-                                Sex. It's on teenage minds. It's messing with their heads. And this kid is the least
-                                likely
-                                sexpert in the schoolyard.
+                            Sexo. Está en la mente de los adolescentes. Está jugando con sus cabezas. Y este niño es lo de menos
+                                probable
+                                sexperto en el patio de la escuela.
                             </p>
                         </div>
                         <div class="buttons-container m-t-20">
@@ -565,7 +520,7 @@
                                     <svg viewBox="0 0 24 24">
                                         <path d="M6 4l15 8-15 8z" fill="currentColor"></path>
                                     </svg>
-                                </span> Play</button>
+                                </span> Iniciar</button>
 
                             <button class="more-info-button m-t-20"><span>
                                     <svg viewBox="0 0 24 24">
@@ -573,16 +528,16 @@
                                             d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10zm-2 0a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8zm-9 6v-7h2v7h-2zm1-8.75a1.21 1.21 0 0 1-.877-.364A1.188 1.188 0 0 1 10.75 8c0-.348.123-.644.372-.886.247-.242.54-.364.878-.364.337 0 .63.122.877.364.248.242.373.538.373.886s-.124.644-.373.886A1.21 1.21 0 0 1 12 9.25z"
                                             fill="currentColor"></path>
                                     </svg>
-                                </span> More Info</button>
+                                </span> Mas información</button>
                         </div>
                     </div>
                 </section>
 
 
-                <!--Get In On the Action-->
+              
                 <section id="romantic" class="container p-t-40">
                     <h4 class="romantic-heading">
-                        Get In On the Action
+                    Películas de acción
                     </h4>
                     <div class="romantic-container d-flex flex-start flex-middle flex-no-wrap owl-carousel">
                         <a href="#">
@@ -608,10 +563,10 @@
                     </div>
                 </section>
 
-                <!--Bingeworthy TV Shows-->
+              
                 <section id="romantic" class="container p-t-40">
                     <h4 class="romantic-heading">
-                        Bingeworthy TV Shows
+                    Programas de TV para atracones
                     </h4>
                     <div class="romantic-container d-flex flex-start flex-middle flex-no-wrap owl-carousel">
                         <a href="#">
@@ -635,11 +590,10 @@
                     </div>
                 </section>
 
-
-                <!--Hollywood Action movies-->
+       
                 <section id="romantic" class="container p-t-40">
                     <h4 class="romantic-heading">
-                        Hollywood Action Movies
+                    Películas de acción de Hollywood
                     </h4>
                     <div class="romantic-container d-flex flex-start flex-middle flex-no-wrap owl-carousel">
                         <a href="#">
@@ -671,61 +625,61 @@
                 <div class="widgets d-flex space-between">
                     <div class="first-widget">
                         <ul>
-                            <li class="list-item">Audio and Subtitles</li>
-                            <li class="list-item">Media Center</li>
-                            <li class="list-item">Privacy</li>
-                            <li class="list-item">Contact us</li>
+                            <li class="list-item">Audio y Subtítulos</li>
+                            <li class="list-item">Centro de Medios</li>
+                            <li class="list-item">Privacidad</li>
+                            <li class="list-item">Contacta con nosotros</li>
                         </ul>
                     </div>
                     <div class="second-widget">
                         <ul>
-                            <li class="list-item">Help Center</li>
+                            <li class="list-item">Centro de ayuda</li>
                             <li class="list-item">Cookie</li>
-                            <li class="list-item">Jobs</li>
+                            <li class="list-item">Trabajos</li>
                         </ul>
                     </div>
                     <div class="third-widget">
                         <ul>
-                            <li class="list-item">Audio Description</li>
-                            <li class="list-item">Investor Relations</li>
-                            <li class="list-item">Legal Notice</li>
+                            <li class="list-item">Audiodescripción</li>
+                            <li class="list-item">Relaciones con inversionistas</li>
+                            <li class="list-item">Aviso Legal</li>
                         </ul>
                     </div>
                     <div class="forth-widget">
                         <ul>
-                            <li class="list-item">Gift Card</li>
-                            <li class="list-item">Term Of Use</li>
-                            <li class="list-item">Corporate Information</li>
+                            <li class="list-item">Tarjeta de regalo</li>
+                            <li class="list-item">Terminos de uso</li>
+                            <li class="list-item">Información corporativa</li>
                         </ul>
                     </div>
                 </div>
-                <button class="button service">Service Code</button>
-                <p class="copyright">@copyright 2020 Vanilacodes, Inc.</p>
+                <button class="button service">Código de servicio</button>
+                <p class="copyright">@Copyright 2023 David Serrano, Inc.</p>
             </div>
 
 
         </footer>
         </div>
 
-        
+
     </main>
 
     <div class="footer-navigation d-flex space-between">
         <a href="browse.html" class="nav-item active">
             <i class="fa fa-home" aria-hidden="true"></i> </br>
-            Home
+            <span>Casa</span>
         </a>
         <a href="search.html" class="nav-item">
             <i class="fa fa-search" aria-hidden="true"></i></br>
-            Search
+            Buscar
         </a>
         <a href="latest.html" class="nav-item">
             <i class="fa fa-film" aria-hidden="true"></i></br>
-            Latest
+            Ultimo
         </a>
         <a href="user-profile/home.html" class="nav-item">
             <i class="fa fa-user" aria-hidden="true"></i></br>
-            Account
+            Cuenta
         </a>
     </div>
 

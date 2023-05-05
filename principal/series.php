@@ -33,19 +33,19 @@
                 <div class="dropdown-content">
                     <a href="#" class="profile-item d-flex flex-middle">
                         <img src="../img/icons/user2.png" alt="user profile icon" class="user-icon">
-                        <span>You have new notification from <span>User 123</span></span>
+                        <span>Tienes una nueva notificación de <span>David</span></span>
                     </a>
                     <a href="#" class="profile-item d-flex flex-middle">
                         <img src="../img/icons/user1.png" alt="user profile icon" class="user-icon">
-                        <span>You have new notification from <span>User 123</span></span>
+                        <span>Tienes una nueva notificación de <span>Isabella</span></span>
                     </a>
                     <a href="#" class="profile-item d-flex flex-middle">
                         <img src="../img/icons/user4.png" alt="user profile icon" class="user-icon">
-                        <span>You have new notification from <span>User 123</span></span>
+                        <span>Tienes una nueva notificación de <span>Ramon</span></span>
                     </a>
                     <a href="#" class="profile-item d-flex flex-middle">
                         <img src="../img/icons/user3.png" alt="user profile icon" class="user-icon">
-                        <span>You have new notification from <span>User 123</span></span>
+                        <span>Tienes una nueva notificación de <span>Julia</span></span>
                     </a>
                 </div>
             </div>
@@ -57,27 +57,27 @@
                     <div class="profile-links">
                         <a href="#" class="profile-item d-flex flex-middle">
                             <img src="../img/icons/user1.png" alt="user profile icon" class="user-icon">
-                            <span>Rajesh</span>
+                            <span>David</span>
                         </a>
                         <a href="#" class="profile-item d-flex flex-middle">
                             <img src="../img/icons/user2.png" alt="user profile icon" class="user-icon">
-                            <span>Karan</span>
+                            <span>Isabella</span>
                         </a>
                         <a href="#" class="profile-item d-flex flex-middle">
                             <img src="../img/icons/user3.png" alt="user profile icon" class="user-icon">
-                            <span>Pappy</span>
+                            <span>Ramon</span>
                         </a>
                         <a href="#" class="profile-item d-flex flex-middle" style="margin-bottom: 13px;">
                             <img src="../img/icons/user4.png" alt="user profile icon" class="user-icon">
-                            <span>Denny</span>
+                            <span>Julia</span>
                         </a>
                         <a href="#" class="profile-item last" >Manage Profiles</a>
                     </div>
                     <div class="line"></div>
                     <div class="links d-flex direction-column">
-                        <a href="user-profile/home.html">Account</a>
-                        <a href="#">Help Center</a>
-                        <a href="/">Sign Out of Netflix</a>
+                        <a href="../users/usuario.php">Cuenta</a>
+                        <a href="#">Centro de ayuda</a>
+                        <a href="logout.php">Salir de Netflix</a>
                     </div>
                     
                 </div>
