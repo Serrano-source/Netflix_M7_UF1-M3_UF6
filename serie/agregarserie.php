@@ -2,6 +2,7 @@
 
     include "../config/Conexion.php";
 
+    // Seguimiento de los valores enviados
     $titulo = $_POST["titulo"];
     $nombre_serie =$_POST["nombre_serie"];
     $capitulos =$_POST["capitulos"];
@@ -18,3 +19,4 @@
     }else{
         echo "No se insertaron los datos";
     }
+

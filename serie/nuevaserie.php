@@ -27,26 +27,43 @@
         <br>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Titulo</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" name="titulo">
+        <input type="text" class="form-control" id="exampleInputEmail1" name="titulo" required>
+        <?php if(!empty($tituloError)): ?>
+        <span class="error"><?php echo $tituloError; ?></span>
+    <?php endif; ?>
     </div>
     <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Nombre de la serie</label>
-        <input type="text" class="form-control" name="nombre_serie">
+        <input type="text" class="form-control" name="nombre_serie" required>
+        <?php if(!empty($nombre_serieError)): ?>
+        <span class="error"><?php echo $nombre_serieError; ?></span>
+    <?php endif; ?>
     </div>
     <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Capitulo</label>
-        <input type="text" class="form-control" name="capitulos">
+        <input type="text" class="form-control" name="capitulos" required>
+        <?php if(!empty($capitulosError)): ?>
+        <span class="error"><?php echo $capitulosError; ?></span>
+    <?php endif; ?>
     </div>
     <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Temporadas</label>
-        <input type="text" class="form-control" name="temporadas">
+        <input type="text" class="form-control" name="temporadas" required>
+        <?php if(!empty($temporadasError)): ?>
+        <span class="error"><?php echo $temporadasError; ?></span>
+    <?php endif; ?>
     </div>
     <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Imagen</label>
-        <input type="file" class="form-control" name="imagen">
+        <input type="file" class="form-control" name="imagen" required>
+        <?php if(!empty($imagenError)): ?>
+        <span class="error"><?php echo $imagenError; ?></span>
+    <?php endif; ?>
     </div>
+    <div class="col-md-4">
     <button type="submit" class="btn btn-primary">Enviar</button>
     <a href="../principal/series.php" class="btn btn-info">Volver</a>
+    <div>
     </form>
     </div>
     </body>

@@ -58,6 +58,7 @@
     <button type="submit" class="btn btn-primary">Enviar</button>
     <a href="../principal/series.php" class="btn btn-info">Volver</a>
     </form>
+    
     </div>
     </body>
     <html>
