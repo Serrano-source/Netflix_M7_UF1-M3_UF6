@@ -1,4 +1,4 @@
-> .[!NOTE]
+> [!NOTE]
 > Aqui tienes una nota especial
 
 
