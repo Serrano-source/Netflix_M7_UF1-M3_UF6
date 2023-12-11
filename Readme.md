@@ -1,3 +1,8 @@
+> .[!NOTE].
+> Aqui tienes una nota especial
+
+
+
 **Descripcion del proyecto:**
 
 El proyecto tracta de hacer un netflix pero en vez de ser el tipico netflix que todos conocemos sera un netflix tipo administrador.
